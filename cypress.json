@@ -1,0 +1,13 @@
+{
+  "chromeWebSecurity": false,
+  "viewportWidth": 1680,
+  "viewportHeight": 1220,
+  "video": false,
+  "defaultCommandTimeout": 20000,
+  "screenshotOnRunFailure":true,
+
+  "retries": {    
+    "runMode": 3,
+    "openMode": 0
+  }
+}

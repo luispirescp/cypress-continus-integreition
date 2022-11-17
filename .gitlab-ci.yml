@@ -1,0 +1,22 @@
+variables:
+  NPM_REGISTRY: http://artifactory.sicredi.net/artifactory/api/npm/npm-virtual/
+
+stages:
+  - e2e-test
+
+include:
+  remote: https://gitlab.sicredi.net/devconsole/dev-console-ci/raw/master/sicredi-devconsole-ci.yaml
+  
+e2e-test:
+  stage: e2e-test
+  image: cypress/base:13.8.0
+  script:
+    - npm config set registry $NPM_REGISTRY
+    - npm install cypress@^7.6.0 --save-dev
+    - npm ci
+    - npm run test
+  #artifacts:
+   # when: always 
+  #  paths:
+      # - cypress/videos/ 
+      #- cypress/screenshots/

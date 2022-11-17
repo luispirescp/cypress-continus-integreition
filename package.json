@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "test": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome --headless",
+    "cy:run:firefox": "cypress run --browser firefox --headless",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^7.7.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-localstorage-commands": "^1.4.4",
+    "cypress-plugin-retries": "^1.5.2",
+    "cypress-xpath": "^1.6.2",
+    "fake": "^0.2.2",
+    "faker": "^5.5.3"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "gerador-validador-cpf": "^5.0.1",
+    "request": "^2.88.2",
+    "selenium-webdriver": "^4.0.0-beta.4"
+  }
+}
