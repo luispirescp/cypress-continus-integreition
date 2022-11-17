@@ -17,5 +17,6 @@ describe(" nome do teste", () => {
 
   it("teste login)", () => {
     cy.logins_randstad()
+    
   })
 });
